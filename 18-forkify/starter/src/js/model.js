@@ -1,6 +1,5 @@
 import { async } from 'regenerator-runtime'
 import { API_URL, RES_PER_PAGE, KEY } from './config';
-// import { getJSON, sendJSON} from './helpers';
 import { AJAX} from './helpers';
 
 
@@ -42,7 +41,6 @@ export const loadRecipe = async function (id) {
         else state.recipe.bookmarked = false;
     }
     catch(err) {
-        // Temp err handling
         throw err;
     }
 }
@@ -109,6 +107,7 @@ init();
 const clearBookmarks = function () {
     localStorage.clear('bookmarks');
 }
+//////////  Development Use Only:
 // clearBookmarks();
 
 export const uploadRecipe = async function (newRecipe) {
