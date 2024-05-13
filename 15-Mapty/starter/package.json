@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "rm -rf .parcel-cache && parcel index.html",
+    "build": "rm -rf .parcel-cache && parcel build index.html --dist-dir ./dist"
+  },
+  
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
